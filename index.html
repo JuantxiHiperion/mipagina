@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+    <h1>Formulario para la reserva de libro</h1>
+
+    <form>
+        <fieldset>
+            <legend>Datos del libro</legend>
+    
+            <label for="titulo">Título del libro:</label>
+            <input type="text" id="titulo">
+    
+            <br>
+            <label for="autor">Autor del libro:</label>
+            <input type="text" id="autor">
+    
+            <br>
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn">
+    
+            <br>
+            <label for="editorial">Editorial</label>
+            <select name="editorial" id="editorial">
+                <option value="anaya">Anaya Multimedia</option>
+                <option value="oreilly">O'Reilly</option>
+                <option value="apress">Apress</option>
+                <option value="springer">Springer</option>
+            </select>
+
+            <p>Selecciona el formato del libro:</p>
+            <input type="radio" id="papel" name="formato" value="papel">
+            <label for="papel">Papel</label>
+            <input type="radio" id="ebook" name="formato" value="ebook">
+            <label for="ebook">Ebook</label>
+
+            <p>Anular la reserva si el libro no está disponible antes de:</p>
+            <input type="date">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">
+                Nombre y apellidos
+                <input type="text" id="nombre">
+            </label>
+            <label for="edad">Edad (entre 18 y 100 años)</label>
+            <input type="number" id="edad" min="18" max="100">
+        </fieldset>
+        <br>
+        <input type="submit" value="Reservar libro">
+    </form>
+    
+</body>
+</html>
